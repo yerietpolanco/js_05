@@ -1,0 +1,49 @@
+/* import open sans font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: darkgrey;
+    max-width: 1024px;
+    display: flex;
+    padding: 50px;
+    gap: 15px;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+span {
+    font-size: 22px;
+}
+
+input, select {
+    height: 30px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+canvas {
+    max-width: 1440px;
+    max-height: 800px;
+}

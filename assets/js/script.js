@@ -110,9 +110,14 @@ buscar.addEventListener("click", function () {
   valor = document.querySelector("#cur").value;
   cantidad = document.querySelector("#clp").value;
 
-  res.innerHTML = "Resultado : " + valor * cantidad;
+  res.innerHTML = "Resultado : " + cantidad / valor;
 
-  grafico();
+  // obtener el nombre de la moneda seleccionada
+  const moneda = document.getElementById('cur');
+
+  // se obtiene el indice seleccionado para obtener la moneda
+  const text = moneda.options[moneda.selectedIndex].innerHTML;
+  grafico(text);
 });
 
 printMonedas();
